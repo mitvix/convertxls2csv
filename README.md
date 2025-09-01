@@ -17,4 +17,6 @@ sudo cp convertxls2csv /usr/local/bin/
 # To convert:
 ./convertxls2csv <file.xlsx>
 ```
+
+# Result
 <img width="698" height="109" alt="image" src="https://github.com/user-attachments/assets/f721d678-be9d-4555-897c-a52d0ca48733" />

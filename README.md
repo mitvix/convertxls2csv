@@ -11,6 +11,9 @@ go mod init convertxls2csv
 go get github.com/xuri/excelize/v2
 go build -o convertxls2csv main.go
 
+# <optional>
+sudo cp convertxls2csv /usr/local/bin/
+
+# To convert:
 ./convertxls2csv <file.xlsx>
 ```
-

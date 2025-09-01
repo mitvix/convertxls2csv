@@ -15,13 +15,13 @@ import (
 // It requires an input XLSX file path and an output directory path as command-line arguments.
 func main() {
 	// Check if the correct number of command-line arguments are provided.
-	if len(os.Args) < 3 {
-		fmt.Println("Usage: convertxls2csv <input.xlsx> <output_directory>")
+	if len(os.Args) < 2 {
+		fmt.Println("Usage: convertxls2csv <input.xlsx>")
 		os.Exit(1)
 	}
 
 	xlsxPath := os.Args[1]
-	outputDir := os.Args[2]
+	outputDir := "csv"
 
 	// Create the output directory if it doesn't already exist.
 	if err := os.MkdirAll(outputDir, 0755); err != nil {
